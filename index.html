@@ -1,0 +1,1156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ritik — Certified Investment Banking Operations Professional</title>
+    <meta
+      name="description"
+      content="Portfolio of Ritik, Certified Investment Banking Operations Professional."
+    />
+    <meta
+      property="og:title"
+      content="Ritik — Certified Investment Banking Operations Professional"
+    />
+    <meta
+      property="og:description"
+      content="Portfolio of Ritik, Certified Investment Banking Operations Professional."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&family=Public+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg-page: #0b1120;
+        --bg-surface: #111a2e;
+        --bg-subtle: #192338;
+        --text-primary: #f8fafc;
+        --text-secondary: #cbd5e1;
+        --text-muted: #94a3b8;
+        --border-hairline: #1e293b;
+        --border-strong: #334155;
+        --accent: #60a5fa;
+        --accent-solid: #2563eb;
+        --accent-hover: #1d4ed8;
+        --accent-soft: rgba(59, 130, 246, 0.14);
+        --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.28), 0 8px 24px rgba(0, 0, 0, 0.22);
+        --shadow-header: 0 6px 20px rgba(0, 0, 0, 0.38);
+        --radius-card: 12px;
+        --radius-control: 8px;
+        --header-height: 64px;
+        --font-display: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        --font-body: 'Public Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: calc(var(--header-height) + 24px);
+        color-scheme: dark;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+      }
+
+      body {
+        margin: 0;
+        background-color: var(--bg-page);
+        color: var(--text-primary);
+        font-family: var(--font-body);
+        font-size: 16px;
+        line-height: 1.65;
+        letter-spacing: 0.005em;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      button {
+        font-family: inherit;
+      }
+
+      :focus-visible {
+        outline: 2px solid var(--accent);
+        outline-offset: 2px;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 1120px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+
+      /* Sticky Top Bar: 3-zone contract */
+      .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        height: var(--header-height);
+        background-color: rgba(11, 17, 32, 0.9);
+        backdrop-filter: blur(8px);
+        border-bottom: 1px solid var(--border-hairline);
+        transition: box-shadow 180ms cubic-bezier(0.16, 1, 0.3, 1);
+      }
+
+      .site-header.is-scrolled {
+        box-shadow: var(--shadow-header);
+      }
+
+      .header-inner {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 32px;
+      }
+
+      .brand {
+        font-family: var(--font-display);
+        font-size: 1.125rem;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        color: var(--text-primary);
+        white-space: nowrap;
+        flex-shrink: 0;
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+      }
+
+      .nav-link {
+        position: relative;
+        font-size: 0.9375rem;
+        font-weight: 500;
+        color: var(--text-secondary);
+        white-space: nowrap;
+        flex-shrink: 0;
+        padding: 6px 0;
+        transition: color 150ms cubic-bezier(0.16, 1, 0.3, 1);
+      }
+
+      .nav-link::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 2px;
+        background-color: var(--accent);
+        transform: scaleX(0);
+        transform-origin: left center;
+        transition: transform 180ms cubic-bezier(0.16, 1, 0.3, 1);
+      }
+
+      .nav-link:hover,
+      .nav-link.is-active {
+        color: var(--text-primary);
+      }
+
+      .nav-link.is-active {
+        color: var(--accent);
+      }
+
+      .nav-link:hover::after,
+      .nav-link.is-active::after {
+        transform: scaleX(1);
+      }
+
+      .header-actions {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex-shrink: 0;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 40px;
+        padding: 8px 18px;
+        border-radius: var(--radius-control);
+        font-size: 0.875rem;
+        font-weight: 600;
+        line-height: 1;
+        white-space: nowrap;
+        flex-shrink: 0;
+        cursor: pointer;
+        border: 1px solid transparent;
+        transition:
+          background-color 160ms cubic-bezier(0.16, 1, 0.3, 1),
+          border-color 160ms cubic-bezier(0.16, 1, 0.3, 1),
+          color 160ms cubic-bezier(0.16, 1, 0.3, 1),
+          transform 160ms cubic-bezier(0.16, 1, 0.3, 1);
+      }
+
+      .btn:active {
+        transform: translateY(1px);
+      }
+
+      .btn-primary {
+        background-color: var(--accent-solid);
+        color: #ffffff;
+      }
+
+      .btn-primary:hover {
+        background-color: var(--accent-hover);
+      }
+
+      .btn-secondary {
+        background-color: var(--bg-surface);
+        color: var(--text-primary);
+        border-color: var(--border-strong);
+      }
+
+      .btn-secondary:hover {
+        background-color: var(--bg-subtle);
+        border-color: var(--text-muted);
+      }
+
+      .mobile-toggle {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        padding: 0;
+        border: 1px solid var(--border-hairline);
+        border-radius: var(--radius-control);
+        background-color: var(--bg-surface);
+        color: var(--text-primary);
+        cursor: pointer;
+      }
+
+      .mobile-drawer {
+        display: none;
+        background-color: var(--bg-surface);
+        border-bottom: 1px solid var(--border-hairline);
+        box-shadow: var(--shadow-header);
+      }
+
+      .mobile-drawer.is-open {
+        display: block;
+      }
+
+      .mobile-drawer-inner {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        padding: 12px 24px 20px;
+      }
+
+      .mobile-nav-link {
+        display: flex;
+        align-items: center;
+        min-height: 44px;
+        padding: 0 12px;
+        border-radius: var(--radius-control);
+        font-size: 0.9375rem;
+        font-weight: 500;
+        color: var(--text-secondary);
+      }
+
+      .mobile-nav-link:hover,
+      .mobile-nav-link.is-active {
+        background-color: var(--accent-soft);
+        color: var(--accent);
+      }
+
+      /* Hero */
+      .hero {
+        background-color: var(--bg-surface);
+        border-bottom: 1px solid var(--border-hairline);
+        padding: 88px 0 80px;
+      }
+
+      .hero-inner {
+        max-width: 760px;
+      }
+
+      .hero-title {
+        margin: 0;
+        font-family: var(--font-display);
+        font-size: clamp(2.5rem, 5vw, 3.75rem);
+        font-weight: 700;
+        line-height: 1.08;
+        letter-spacing: -0.03em;
+        color: var(--text-primary);
+        text-wrap: balance;
+      }
+
+      .hero-subtitle {
+        margin: 18px 0 0;
+        font-family: var(--font-display);
+        font-size: clamp(1.1875rem, 2.2vw, 1.5rem);
+        font-weight: 500;
+        line-height: 1.4;
+        color: var(--accent);
+        text-wrap: balance;
+      }
+
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 12px;
+        margin-top: 32px;
+      }
+
+      /* Sections */
+      .section {
+        padding: 64px 0;
+      }
+
+      .section + .section {
+        border-top: 1px solid var(--border-hairline);
+      }
+
+      .section-header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 16px;
+        margin-bottom: 32px;
+      }
+
+      .section-title {
+        margin: 0;
+        font-family: var(--font-display);
+        font-size: clamp(1.5rem, 2.5vw, 1.875rem);
+        font-weight: 700;
+        line-height: 1.2;
+        letter-spacing: -0.02em;
+        color: var(--text-primary);
+        text-wrap: balance;
+      }
+
+      .subsection-title {
+        margin: 0 0 16px;
+        font-family: var(--font-display);
+        font-size: 1.125rem;
+        font-weight: 600;
+        color: var(--text-primary);
+      }
+
+      /* Cards */
+      .card {
+        background-color: var(--bg-surface);
+        border: 1px solid var(--border-hairline);
+        border-radius: var(--radius-card);
+        box-shadow: var(--shadow-card);
+        padding: 24px;
+        transition:
+          border-color 180ms cubic-bezier(0.16, 1, 0.3, 1),
+          transform 180ms cubic-bezier(0.16, 1, 0.3, 1);
+      }
+
+      .card:hover {
+        border-color: var(--border-strong);
+      }
+
+      .card-title {
+        margin: 0;
+        font-family: var(--font-display);
+        font-size: 1.0625rem;
+        font-weight: 600;
+        line-height: 1.35;
+        color: var(--text-primary);
+      }
+
+      .card-body {
+        margin: 10px 0 0;
+        font-size: 0.9375rem;
+        line-height: 1.65;
+        color: var(--text-secondary);
+      }
+
+      /* About */
+      .about-card {
+        padding: 32px;
+      }
+
+      .about-text {
+        margin: 0;
+        max-width: 75ch;
+        font-size: 1rem;
+        line-height: 1.75;
+        color: var(--text-secondary);
+      }
+
+      /* Grids */
+      .grid-2 {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+      }
+
+      .grid-3 {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 24px;
+      }
+
+      /* Academic Profile */
+      .meta-line {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 8px;
+        margin-top: 8px;
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: var(--text-muted);
+        font-variant-numeric: tabular-nums;
+      }
+
+      .meta-sep {
+        color: var(--border-strong);
+      }
+
+      .academic-institution {
+        color: var(--accent);
+        font-weight: 600;
+      }
+
+      /* Areas of Knowledge */
+      .card-index {
+        display: block;
+        margin-bottom: 10px;
+        font-family: var(--font-display);
+        font-size: 0.8125rem;
+        font-weight: 600;
+        font-variant-numeric: tabular-nums;
+        color: var(--accent);
+      }
+
+      /* Skills Filter */
+      .segmented-control {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        padding: 4px;
+        background-color: var(--bg-subtle);
+        border: 1px solid var(--border-hairline);
+        border-radius: 10px;
+      }
+
+      .segmented-btn {
+        min-height: 36px;
+        padding: 6px 14px;
+        border: 0;
+        border-radius: 6px;
+        background-color: transparent;
+        color: var(--text-secondary);
+        font-size: 0.875rem;
+        font-weight: 500;
+        white-space: nowrap;
+        flex-shrink: 0;
+        cursor: pointer;
+        transition:
+          background-color 150ms cubic-bezier(0.16, 1, 0.3, 1),
+          color 150ms cubic-bezier(0.16, 1, 0.3, 1),
+          box-shadow 150ms cubic-bezier(0.16, 1, 0.3, 1);
+      }
+
+      .segmented-btn:hover {
+        color: var(--text-primary);
+      }
+
+      .segmented-btn.is-active {
+        background-color: var(--bg-surface);
+        color: var(--accent);
+        font-weight: 600;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+      }
+
+      .skills-stack {
+        display: flex;
+        flex-direction: column;
+        gap: 36px;
+      }
+
+      .skill-group.is-hidden {
+        display: none;
+      }
+
+      /* Projects */
+      .project-heading {
+        margin: 0 0 24px;
+        font-family: var(--font-display);
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: var(--text-primary);
+      }
+
+      .project-block-label {
+        margin: 0;
+        font-family: var(--font-display);
+        font-size: 1rem;
+        font-weight: 700;
+        color: var(--accent);
+      }
+
+      .bullet-list {
+        margin: 14px 0 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .bullet-list li {
+        position: relative;
+        padding-left: 16px;
+        font-size: 0.9375rem;
+        line-height: 1.6;
+        color: var(--text-secondary);
+      }
+
+      .bullet-list li::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0.62em;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: var(--accent);
+      }
+
+      /* Contact */
+      .contact-card {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 28px 32px;
+      }
+
+      .contact-email-link {
+        font-family: var(--font-display);
+        font-size: clamp(1.0625rem, 2vw, 1.3125rem);
+        font-weight: 600;
+        color: var(--text-primary);
+        word-break: break-word;
+        transition: color 150ms cubic-bezier(0.16, 1, 0.3, 1);
+      }
+
+      .contact-email-link:hover {
+        color: var(--accent);
+      }
+
+      .contact-actions {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .copy-feedback {
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: var(--accent);
+        min-height: 20px;
+      }
+
+      /* Footer */
+      .site-footer {
+        background-color: var(--bg-surface);
+        border-top: 1px solid var(--border-hairline);
+        padding: 28px 0;
+      }
+
+      .footer-inner {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        font-size: 0.875rem;
+        color: var(--text-muted);
+      }
+
+      .footer-name {
+        font-family: var(--font-display);
+        font-weight: 600;
+        color: var(--text-primary);
+      }
+
+      .footer-email:hover {
+        color: var(--accent);
+      }
+
+      /* Subtle Scroll Reveal */
+      .reveal {
+        opacity: 1;
+        transform: translateY(0);
+        transition:
+          opacity 360ms cubic-bezier(0.16, 1, 0.3, 1),
+          transform 360ms cubic-bezier(0.16, 1, 0.3, 1);
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .reveal {
+          transition: none;
+        }
+      }
+
+      /* Responsive Breakpoints */
+      @media (max-width: 1024px) {
+        .grid-3 {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 768px) {
+        .nav-links,
+        .header-cta {
+          display: none;
+        }
+
+        .mobile-toggle {
+          display: inline-flex;
+        }
+
+        .hero {
+          padding: 64px 0 56px;
+        }
+
+        .section {
+          padding: 48px 0;
+        }
+
+        .grid-2,
+        .grid-3 {
+          grid-template-columns: 1fr;
+        }
+
+        .about-card,
+        .contact-card {
+          padding: 24px;
+        }
+
+        .btn {
+          min-height: 44px;
+        }
+
+        .segmented-btn {
+          min-height: 40px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header" id="site-header">
+      <div class="container header-inner">
+        <a href="#top" class="brand">Ritik</a>
+
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="#about" class="nav-link" data-nav="about">About</a>
+          <a href="#academics" class="nav-link" data-nav="academics">Academics</a>
+          <a href="#knowledge" class="nav-link" data-nav="knowledge">Knowledge</a>
+          <a href="#skills" class="nav-link" data-nav="skills">Skills</a>
+          <a href="#projects" class="nav-link" data-nav="projects">Projects</a>
+        </nav>
+
+        <div class="header-actions">
+          <a href="#contact" class="btn btn-primary header-cta">Contact</a>
+          <button
+            type="button"
+            class="mobile-toggle"
+            id="mobile-menu-toggle"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+            aria-controls="mobile-drawer"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <line x1="4" y1="6" x2="20" y2="6"></line>
+              <line x1="4" y1="12" x2="20" y2="12"></line>
+              <line x1="4" y1="18" x2="20" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="mobile-drawer" id="mobile-drawer">
+        <nav class="mobile-drawer-inner" aria-label="Mobile navigation">
+          <a href="#about" class="mobile-nav-link" data-nav="about">About</a>
+          <a href="#academics" class="mobile-nav-link" data-nav="academics">Academic Profile</a>
+          <a href="#knowledge" class="mobile-nav-link" data-nav="knowledge">Areas of Knowledge</a>
+          <a href="#skills" class="mobile-nav-link" data-nav="skills">Skills</a>
+          <a href="#leadership" class="mobile-nav-link" data-nav="leadership">Leadership</a>
+          <a href="#projects" class="mobile-nav-link" data-nav="projects">Projects</a>
+          <a href="#contact" class="mobile-nav-link" data-nav="contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container">
+          <div class="hero-inner">
+            <h1 class="hero-title">Ritik</h1>
+            <p class="hero-subtitle">Certified Investment Banking Operations Professional</p>
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">Projects</a>
+              <a href="#contact" class="btn btn-secondary">Contact</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal" id="about">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">About</h2>
+          </div>
+          <div class="card about-card">
+            <p class="about-text">
+              A young, punctual, and career-oriented individual with a keen interest in learning and a rapid ability to adopt new concepts. To build a career in investment banking operations, applying my knowledge of financial markets, the trade lifecycle, reconciliation, and KYC &amp; AML. I bring strong leadership, interpersonal skills, and effective communication, thriving in high-pressure environments and welcoming challenges. Always eager to take on challenges and opportunities to demonstrate talent while simultaneously striving to acquire new skills and processes necessary for organizational growth and improvement.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal" id="academics">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Academic Profile</h2>
+          </div>
+          <div class="grid-2">
+            <article class="card">
+              <h3 class="card-title">Certified Investment Banking Operations Professional</h3>
+              <div class="meta-line">
+                <span class="academic-institution">Imarticus Learning</span>
+                <span class="meta-sep" aria-hidden="true">/</span>
+                <span>Delhi</span>
+                <span class="meta-sep" aria-hidden="true">/</span>
+                <span>2026</span>
+              </div>
+              <p class="card-body">
+                Financial markets, financial regulators, investment banks, equity, derivatives, KYC and AML, transaction monitoring, reconciliation
+              </p>
+            </article>
+
+            <article class="card">
+              <h3 class="card-title">Bachelor of Arts</h3>
+              <div class="meta-line">
+                <span class="academic-institution">Delhi University</span>
+                <span class="meta-sep" aria-hidden="true">/</span>
+                <span>2023 – 2026</span>
+                <span class="meta-sep" aria-hidden="true">/</span>
+                <span>B-Grade</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal" id="knowledge">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Areas of Knowledge</h2>
+          </div>
+          <div class="grid-3">
+            <article class="card">
+              <span class="card-index">01</span>
+              <h3 class="card-title">Financial Markets and Products</h3>
+              <p class="card-body">
+                Working knowledge of financial markets, financial regulators, investment banks, equity, fixed income and derivatives (futures, forwards, options and swaps).
+              </p>
+            </article>
+
+            <article class="card">
+              <span class="card-index">02</span>
+              <h3 class="card-title">KYC, AML and Transaction Monitoring</h3>
+              <p class="card-body">
+                Understanding of customer verification, anti-money laundering checks, and monitoring of transactions for suspicious activity.
+              </p>
+            </article>
+
+            <article class="card">
+              <span class="card-index">03</span>
+              <h3 class="card-title">Microsoft Excel</h3>
+              <p class="card-body">
+                Proficient in Conditional Formatting, Pivot Tables, Slicers, Data Visualization, Sorting, Charts and Data Analysis.
+              </p>
+            </article>
+
+            <article class="card">
+              <span class="card-index">04</span>
+              <h3 class="card-title">Trade Lifecycle and Reconciliation</h3>
+              <p class="card-body">
+                Understanding of how a trade moves from capture to confirmation and settlement, and how reconciliation breaks are identified and resolved.
+              </p>
+            </article>
+
+            <article class="card">
+              <span class="card-index">05</span>
+              <h3 class="card-title">Corporate Actions</h3>
+              <p class="card-body">
+                Understanding of corporate actions such as dividends, stock splits and mergers, and how they affect investor holdings.
+              </p>
+            </article>
+
+            <article class="card">
+              <span class="card-index">06</span>
+              <h3 class="card-title">Loan Syndication</h3>
+              <p class="card-body">
+                Understanding of loan structuring, documentation and syndication processes.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal" id="skills">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Skills</h2>
+            <div class="segmented-control" role="tablist" aria-label="Filter skills">
+              <button
+                type="button"
+                class="segmented-btn is-active"
+                role="tab"
+                aria-selected="true"
+                data-skill-filter="all"
+              >
+                All
+              </button>
+              <button
+                type="button"
+                class="segmented-btn"
+                role="tab"
+                aria-selected="false"
+                data-skill-filter="soft"
+              >
+                Soft Skills
+              </button>
+              <button
+                type="button"
+                class="segmented-btn"
+                role="tab"
+                aria-selected="false"
+                data-skill-filter="hard"
+              >
+                Hard Skills
+              </button>
+            </div>
+          </div>
+
+          <div class="skills-stack">
+            <div class="skill-group" data-skill-group="soft">
+              <h3 class="subsection-title">Soft Skills</h3>
+              <div class="grid-2">
+                <article class="card">
+                  <h4 class="card-title">Adaptability</h4>
+                  <p class="card-body">
+                    Quick to learn and adjust strategies, keeping up with financial trends and tools.
+                  </p>
+                </article>
+
+                <article class="card">
+                  <h4 class="card-title">Effective Communication</h4>
+                  <p class="card-body">
+                    Capable of clearly articulating financial information to both technical and non-technical stakeholders.
+                  </p>
+                </article>
+
+                <article class="card">
+                  <h4 class="card-title">Teamwork</h4>
+                  <p class="card-body">
+                    Experience working effectively in teams to deliver high-quality outcomes.
+                  </p>
+                </article>
+
+                <article class="card">
+                  <h4 class="card-title">Critical Thinking</h4>
+                  <p class="card-body">
+                    Strong ability to analyze situations, break down complex problems and find efficient solutions.
+                  </p>
+                </article>
+              </div>
+            </div>
+
+            <div class="skill-group" data-skill-group="hard">
+              <h3 class="subsection-title">Hard Skills</h3>
+              <div class="grid-3">
+                <article class="card">
+                  <h4 class="card-title">MS Word</h4>
+                  <p class="card-body">
+                    Possess proficiency in function knowledge and demonstrate seamless workflow capabilities.
+                  </p>
+                </article>
+
+                <article class="card">
+                  <h4 class="card-title">MS PowerPoint</h4>
+                  <p class="card-body">
+                    Skilled in crafting compelling and visually appealing presentations that effectively convey ideas.
+                  </p>
+                </article>
+
+                <article class="card">
+                  <h4 class="card-title">MS Excel</h4>
+                  <p class="card-body">
+                    Functions such as VLOOKUP, HLOOKUP, conditional formatting, SUMIF, COUNTIF, and COUNTIFS.
+                  </p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal" id="leadership">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Leadership and Social Involvement</h2>
+          </div>
+          <article class="card">
+            <h3 class="card-title">Block Games in Kho-Kho and Kabaddi</h3>
+            <p class="card-body">
+              Represented the school at the inter-school Block Games in both Kho-Kho and Kabaddi, competing against top regional talent. Actively led team strategy sessions, coordinated defensive formations, and mentored junior players.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal" id="projects">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Projects</h2>
+          </div>
+          <h3 class="project-heading">KYC and AML Compliance Checklist</h3>
+          <div class="grid-3">
+            <article class="card">
+              <h4 class="project-block-label">Action</h4>
+              <ul class="bullet-list">
+                <li>Designed a practical KYC &amp; AML compliance checklist following FATF and SEBI guidelines.</li>
+                <li>Included key verification steps like PAN validation, address proof, PEP check, and sanction screening</li>
+                <li>Mapped compliance status and remarks for each checklist item using real-world compliance standards.</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h4 class="project-block-label">Outcome</h4>
+              <ul class="bullet-list">
+                <li>Developed a ready-to-use checklist for banks and financial institutions to ensure regulatory compliance.</li>
+                <li>Identified key areas for risk detection such as politically exposed persons (PEPs) and high-risk customers.</li>
+                <li>Helped reinforce fraud prevention, customer screening, and safe onboarding practices.</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h4 class="project-block-label">Recommendation</h4>
+              <ul class="bullet-list">
+                <li>Automate verification processes using APIs linked to official government databases for PAN/Aadhar.</li>
+                <li>Regularly update the checklist as per changes in FATF, RBI, SEBI, or global regulatory frameworks.</li>
+                <li>Implement continuous monitoring tools for AML to flag suspicious transactions post-onboarding.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal" id="contact">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Contact</h2>
+          </div>
+          <div class="card contact-card">
+            <div>
+              <a href="mailto:ritikbirhman.rb@gmail.com" class="contact-email-link">
+                ritikbirhman.rb@gmail.com
+              </a>
+            </div>
+            <div class="contact-actions">
+              <a href="mailto:ritikbirhman.rb@gmail.com" class="btn btn-primary">Send Email</a>
+              <button type="button" class="btn btn-secondary" id="copy-email-btn">
+                Copy Email
+              </button>
+              <span class="copy-feedback" id="copy-feedback" role="status" aria-live="polite"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span class="footer-name">Ritik</span>
+        <a href="mailto:ritikbirhman.rb@gmail.com" class="footer-email">
+          ritikbirhman.rb@gmail.com
+        </a>
+      </div>
+    </footer>
+
+    <script>
+      (function () {
+        const header = document.getElementById('site-header');
+        const mobileToggle = document.getElementById('mobile-menu-toggle');
+        const mobileDrawer = document.getElementById('mobile-drawer');
+        const navLinks = document.querySelectorAll('[data-nav]');
+        const sections = document.querySelectorAll('main section[id]');
+        const skillFilterButtons = document.querySelectorAll('[data-skill-filter]');
+        const skillGroups = document.querySelectorAll('[data-skill-group]');
+        const copyEmailBtn = document.getElementById('copy-email-btn');
+        const copyFeedback = document.getElementById('copy-feedback');
+        const emailAddress = 'ritikbirhman.rb@gmail.com';
+
+        function updateHeaderShadow() {
+          if (window.scrollY > 8) {
+            header.classList.add('is-scrolled');
+          } else {
+            header.classList.remove('is-scrolled');
+          }
+        }
+
+        window.addEventListener('scroll', updateHeaderShadow, { passive: true });
+        updateHeaderShadow();
+
+        function closeMobileMenu() {
+          mobileDrawer.classList.remove('is-open');
+          mobileToggle.setAttribute('aria-expanded', 'false');
+        }
+
+        mobileToggle.addEventListener('click', function () {
+          const isOpen = mobileDrawer.classList.toggle('is-open');
+          mobileToggle.setAttribute('aria-expanded', String(isOpen));
+        });
+
+        mobileDrawer.querySelectorAll('a').forEach(function (link) {
+          link.addEventListener('click', closeMobileMenu);
+        });
+
+        document.addEventListener('keydown', function (event) {
+          if (event.key === 'Escape' && mobileDrawer.classList.contains('is-open')) {
+            closeMobileMenu();
+            mobileToggle.focus();
+          }
+        });
+
+        if ('IntersectionObserver' in window) {
+          const observer = new IntersectionObserver(
+            function (entries) {
+              entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                  const id = entry.target.getAttribute('id');
+                  navLinks.forEach(function (link) {
+                    if (link.getAttribute('data-nav') === id) {
+                      link.classList.add('is-active');
+                    } else {
+                      link.classList.remove('is-active');
+                    }
+                  });
+                }
+              });
+            },
+            {
+              rootMargin: '-30% 0px -55% 0px',
+              threshold: 0,
+            }
+          );
+
+          sections.forEach(function (section) {
+            observer.observe(section);
+          });
+        }
+
+        skillFilterButtons.forEach(function (button) {
+          button.addEventListener('click', function () {
+            const filter = button.getAttribute('data-skill-filter');
+
+            skillFilterButtons.forEach(function (btn) {
+              const isSelected = btn === button;
+              btn.classList.toggle('is-active', isSelected);
+              btn.setAttribute('aria-selected', String(isSelected));
+            });
+
+            skillGroups.forEach(function (group) {
+              const groupType = group.getAttribute('data-skill-group');
+              const shouldShow = filter === 'all' || filter === groupType;
+              group.classList.toggle('is-hidden', !shouldShow);
+            });
+          });
+        });
+
+        let copyResetTimer = null;
+
+        function showCopyFeedback(message) {
+          copyFeedback.textContent = message;
+          if (copyResetTimer) {
+            window.clearTimeout(copyResetTimer);
+          }
+          copyResetTimer = window.setTimeout(function () {
+            copyFeedback.textContent = '';
+          }, 2500);
+        }
+
+        copyEmailBtn.addEventListener('click', function () {
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard
+              .writeText(emailAddress)
+              .then(function () {
+                showCopyFeedback('Copied');
+              })
+              .catch(function () {
+                fallbackCopy();
+              });
+          } else {
+            fallbackCopy();
+          }
+        });
+
+        function fallbackCopy() {
+          const tempInput = document.createElement('input');
+          tempInput.value = emailAddress;
+          tempInput.setAttribute('readonly', '');
+          tempInput.style.position = 'absolute';
+          tempInput.style.left = '-9999px';
+          document.body.appendChild(tempInput);
+          tempInput.select();
+          try {
+            document.execCommand('copy');
+            showCopyFeedback('Copied');
+          } catch (err) {
+            showCopyFeedback(emailAddress);
+          }
+          document.body.removeChild(tempInput);
+        }
+      })();
+    </script>
+  </body>
+</html>
